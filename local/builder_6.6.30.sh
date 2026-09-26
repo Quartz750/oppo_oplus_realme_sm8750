@@ -334,6 +334,7 @@ if [[ "$APPLY_DROIDSPACES" == [sSeE] ]]; then
     echo "正在启用容器环境扩展支持..."
     # 开启虚拟 HCI 设备支持
     echo "CONFIG_BT_HCIVHCI=y" >> "$DEFCONFIG_FILE"
+    echo "CONFIG_USER_NS=y" >> "$DEFCONFIG_FILE"
     # 开启 systemd-coredump 支持
     echo "CONFIG_STATIC_USERMODEHELPER=n" >> "$DEFCONFIG_FILE"
     # 添加 Lindroid EVDI DRM 驱动
